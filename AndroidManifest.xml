@@ -78,6 +78,10 @@
                 android:taskAffinity=""
                 android:configChanges="orientation|keyboardHidden|keyboard|navigation"/>
 
+        <activity android:name="AlarmMath"
+                android:theme="@android:style/Theme.Holo.Dialog"
+                android:label="@string/math_dialog" />
+
         <receiver android:name="AlarmReceiver"
                 android:exported="false">
             <intent-filter>

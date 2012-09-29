@@ -559,4 +559,9 @@
     <!-- The overflow actionbar button -->
     <string name="overflow_button_cd">More options</string>
 
+    <!-- Math quiz -->
+    <string name="math_title">Math quiz</string>
+    <string name="math_summary">Solve a math quiz to stop the Alarm</string>
+    <string name="math_dialog">Are you awake?</string>
+
 </resources>

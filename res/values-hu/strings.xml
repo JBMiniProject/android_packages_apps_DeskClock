@@ -380,4 +380,9 @@
     <!-- The overflow actionbar button -->
     <string name="overflow_button_cd">További beállítások</string>
 
+    <!-- Math quiz -->
+    <string name="math_title">Matematika</string>
+    <string name="math_summary">Old meg a feladatot az ébresztés leállításához</string>
+    <string name="math_dialog">Ébren vagy?</string>
+
 </resources>

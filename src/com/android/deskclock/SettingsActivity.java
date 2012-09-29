@@ -18,7 +18,6 @@ package com.android.deskclock;
 
 import java.util.Locale;
 
-import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -50,6 +49,8 @@ public class SettingsActivity extends PreferenceActivity
             "default_ringtone";
     static final String KEY_AUTO_SILENCE =
             "auto_silence";
+    static final String KEY_MATH_MODULE =
+            "math_module";
     static final String KEY_FLIP_ACTION =
             "flip_action";
 
