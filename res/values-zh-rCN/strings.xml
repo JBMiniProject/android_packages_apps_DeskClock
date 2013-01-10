@@ -64,6 +64,13 @@
     <string name="settings" msgid="5849739030579520686">"设置"</string>
     <string name="alarm_in_silent_mode_title" msgid="3892612644543516705">"静音模式下闹钟响"</string>
     <string name="alarm_in_silent_mode_summary" msgid="123772279768441207">"设备处于静音模式时，闹钟仍会响"</string>
+
+    <!-- Setting title for showing/hiding the alarm status bar icon -->
+    <string name="show_status_bar_icon_title">显示图标</string>
+
+    <!-- Setting summary for showing/hiding the alarm statusbar icon -->
+    <string name="show_status_bar_icon_summary">闹钟设定时在状态栏上显示一个图标</string>
+
     <string name="snooze_duration_title" msgid="1471249885139952670">"再响间隔"</string>
   <string-array name="snooze_duration_entries">
     <item msgid="8337408933053603125">"5 分钟"</item>
@@ -219,7 +226,7 @@
     <!-- StopWatch. Preferences. Summary of sectors -->
     <string name="stopwatch_preferences_sectors_summary">{0,choice,0#赛段计时未启用.|1#使用1个赛段来配置赛段计时.|1&lt;使用{0}个赛段来配置赛段计时.}</string>
     <!-- StopWatch. Preferences. Best lap behaviour -->
-    <string name="stopwatch_preferences_best_lap_behaviour">最佳单圈行为</string>
+    <string name="stopwatch_preferences_best_lap_behavior">最佳单圈行为</string>
     <!-- StopWatch. Preferences. About -->
     <string name="stopwatch_preferences_about">关于</string>
     <!-- StopWatch. Preferences. Summary of About catergory -->

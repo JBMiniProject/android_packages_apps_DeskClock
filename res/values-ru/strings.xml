@@ -173,7 +173,7 @@
     <string name="stopwatch_preferences_lap_sectors_summary">Настройки кругов и секторов.</string>
     <string name="stopwatch_preferences_sectors">Секторы</string>
     <string name="stopwatch_preferences_sectors_summary">{0,выбор,0#Секторы круга не включены.|1#Круг состоит из 1 сектора.|1&lt;Круг состоит из {0} секторов.}</string>
-    <string name="stopwatch_preferences_best_lap_behaviour">Настройки лучшего круга</string>
+    <string name="stopwatch_preferences_best_lap_behavior">Настройки лучшего круга</string>
     <string name="stopwatch_preferences_about">О программе</string>
     <string name="stopwatch_best_lap_lower_pref">Меньшее время - лучшее</string>
     <string name="stopwatch_best_lap_lower_pref_summary">Лучший круг - меньший по времени.</string>
@@ -233,4 +233,7 @@
     <string name="cling_stopwatch_desc">Настройте \"Круги\" и \"Секторы\" в пункте меню \"Настройки\".</string>
     <string name="cling_countdown_desc">Для редактирования Таймера, нажмите и удерживайте часы.</string>
     <string name="overflow_button_cd">Дополнительные настройки</string>
+
+    <string name="show_status_bar_icon_title">Показывать иконку</string>
+    <string name="show_status_bar_icon_summary">Отображать иконку в строке состояния при установленном будильнике</string>
 </resources>
