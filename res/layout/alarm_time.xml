@@ -67,16 +67,17 @@
                 android:gravity="right"
                 android:singleLine="true"/>
 
+            <TextView android:id="@+id/daysOfWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_wrapper"
+                android:paddingTop="2dip"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?android:attr/textColorTertiary" />
+
         </LinearLayout>
 
-        <TextView android:id="@+id/daysOfWeek"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/time_wrapper"
-            android:paddingTop="2dip"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="?android:attr/textColorTertiary"
-            />
+
 
     </com.android.deskclock.DigitalClock>
 
