@@ -83,4 +83,10 @@
         android:summary="@string/show_status_bar_icon_summary"
         android:defaultValue="true"  />
 
+    <CheckBoxPreference
+        android:key="unlock_on_dismiss"	
+        android:title="@string/unlock_on_dismiss_title"
+        android:summary="@string/unlock_on_dismiss_summary"
+        android:defaultValue="true"  />
+
 </PreferenceScreen>

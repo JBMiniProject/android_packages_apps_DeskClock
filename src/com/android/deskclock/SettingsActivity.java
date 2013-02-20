@@ -54,6 +54,8 @@ public class SettingsActivity extends PreferenceActivity
             "math_module";
     static final String KEY_FLIP_ACTION =
             "flip_action";
+    static final String KEY_UNLOCK_ON_DISMISS =
+            "unlock_on_dismiss";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -172,5 +174,8 @@ public class SettingsActivity extends PreferenceActivity
 
         CheckBoxPreference hideStatusbarIcon = (CheckBoxPreference) findPreference(KEY_SHOW_STATUS_BAR_ICON);
         hideStatusbarIcon.setOnPreferenceChangeListener(this);
+
+        CheckBoxPreference unlockOnDismiss = (CheckBoxPreference) findPreference(KEY_UNLOCK_ON_DISMISS);
+        unlockOnDismiss.setOnPreferenceChangeListener(this);
     }
 }
