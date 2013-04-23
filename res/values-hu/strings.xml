@@ -65,8 +65,6 @@
     <string name="alarm_in_silent_mode_summary" msgid="123772279768441207">"Legyen ébresztés néma üzemmódban is."</string>
     <string name="show_status_bar_icon_title">Ikon megjelenítése</string>
     <string name="show_status_bar_icon_summary">Ikon megjelenítése aktív ébresztés esetén az értesítési sávon</string>
-    <string name="unlock_on_dismiss_title">Feloldás ébresztés elvetése után</string>
-    <string name="unlock_on_dismiss_summary">Ha be van jelölve, a képernyőzár fel lesz oldva ha elveted az ébresztést</string>
     <string name="snooze_duration_title" msgid="1471249885139952670">"Szundi hossza"</string>
   <string-array name="snooze_duration_entries">
     <item msgid="8337408933053603125">"5 perc"</item>
@@ -363,10 +361,5 @@
 
     <!-- The overflow actionbar button -->
     <string name="overflow_button_cd">További beállítások</string>
-
-    <!-- Math quiz -->
-    <string name="math_title">Matematika</string>
-    <string name="math_summary">Old meg a feladatot az ébresztés leállításához</string>
-    <string name="math_dialog">Ébren vagy?</string>
 
 </resources>
