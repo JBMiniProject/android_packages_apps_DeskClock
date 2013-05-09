@@ -27,4 +27,21 @@
     <string name="math_summary">Solve a math quiz to stop the Alarm</string>
     <string name="math_dialog">Are you awake?</string>
 
+    <!-- Label for digital clock gadget, shown in list of all gadgets -->
+    <string name="digital_gadget">Digital clock</string>
+
+    <!-- Label for the digital clock color settings -->
+    <string name="clock_color_title">Clock color</string>
+    <!-- Label for the digital clock color settings summary -->
+    <string name="clock_color_summary">Set the color of the digital clock widget.</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+
 </resources>

@@ -18,75 +18,93 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/settings">
 
-    <CheckBoxPreference
-        android:key="alarm_in_silent_mode"
-        android:title="@string/alarm_in_silent_mode_title"
-        android:summary="@string/alarm_in_silent_mode_summary" />
+    <PreferenceCategory
+        android:key="alarm"
+        android:title="@string/default_label">
 
-    <VolumePreference
-        android:title="@string/alarm_volume_title"
-        android:summary="@string/alarm_volume_summary"
-        android:dialogTitle="@string/alarm_volume_title"
-        android:persistent="false"
-        android:streamType="alarm" />
+        <CheckBoxPreference
+            android:key="alarm_in_silent_mode"
+            android:title="@string/alarm_in_silent_mode_title"
+            android:summary="@string/alarm_in_silent_mode_summary" />
 
-    <ListPreference
-        android:key="snooze_duration"
-        android:title="@string/snooze_duration_title"
-        android:entries="@array/snooze_duration_entries"
-        android:entryValues="@array/snooze_duration_values"
-        android:defaultValue="10"
-        android:dialogTitle="@string/snooze_duration_title" />
+        <VolumePreference
+            android:title="@string/alarm_volume_title"
+            android:summary="@string/alarm_volume_summary"
+            android:dialogTitle="@string/alarm_volume_title"
+            android:persistent="false"
+            android:streamType="alarm" />
 
-    <ListPreference
-        android:key="flip_action"
-        android:title="@string/flip_action_title"
-        android:dialogTitle="@string/flip_action_dialog_title"
-        android:entries="@array/flip_action_entries"
-        android:entryValues="@array/flip_action_values"
-        android:defaultValue="0" />
+        <ListPreference
+            android:key="snooze_duration"
+            android:title="@string/snooze_duration_title"
+            android:entries="@array/snooze_duration_entries"
+            android:entryValues="@array/snooze_duration_values"
+            android:defaultValue="10"
+            android:dialogTitle="@string/snooze_duration_title" />
 
-    <ListPreference
-        android:key="auto_silence"
-        android:title="@string/auto_silence_title"
-        android:entries="@array/auto_silence_entries"
-        android:entryValues="@array/auto_silence_values"
-        android:defaultValue="10"
-        android:dialogTitle="@string/auto_silence_title" />
+        <ListPreference
+            android:key="flip_action"
+            android:title="@string/flip_action_title"
+            android:dialogTitle="@string/flip_action_dialog_title"
+            android:entries="@array/flip_action_entries"
+            android:entryValues="@array/flip_action_values"
+            android:defaultValue="0" />
 
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="math_module"
-        android:summary="@string/math_summary"
-        android:title="@string/math_title" />
+        <ListPreference
+            android:key="auto_silence"
+            android:title="@string/auto_silence_title"
+            android:entries="@array/auto_silence_entries"
+            android:entryValues="@array/auto_silence_values"
+            android:defaultValue="10"
+            android:dialogTitle="@string/auto_silence_title" />
 
-    <ListPreference
-        android:key="volume_button_setting"
-        android:title="@string/volume_button_setting_title"
-        android:dialogTitle="@string/volume_button_dialog_title"
-        android:entries="@array/volume_button_setting_entries"
-        android:entryValues="@array/volume_button_setting_values"
-        android:summary="@string/volume_button_setting_summary"
-        android:defaultValue="2" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="math_module"
+            android:summary="@string/math_summary"
+            android:title="@string/math_title" />
 
-    <com.android.deskclock.AlarmPreference
-        android:key="default_ringtone"
-        android:title="@string/default_ringtone_setting_title"
-        android:ringtoneType="alarm"
-        android:showDefault="false"
-        android:persistent="false"
-        android:showSilent="true" />
+        <ListPreference
+            android:key="volume_button_setting"
+            android:title="@string/volume_button_setting_title"
+            android:dialogTitle="@string/volume_button_dialog_title"
+            android:entries="@array/volume_button_setting_entries"
+            android:entryValues="@array/volume_button_setting_values"
+            android:summary="@string/volume_button_setting_summary"
+            android:defaultValue="2" />
 
-    <CheckBoxPreference
-        android:key="show_status_bar_icon"
-        android:title="@string/show_status_bar_icon_title"
-        android:summary="@string/show_status_bar_icon_summary"
-        android:defaultValue="true"  />
+        <com.android.deskclock.AlarmPreference
+            android:key="default_ringtone"
+            android:title="@string/default_ringtone_setting_title"
+            android:ringtoneType="alarm"
+            android:showDefault="false"
+            android:persistent="false"
+            android:showSilent="true" />
 
-    <CheckBoxPreference
-        android:key="unlock_on_dismiss"	
-        android:title="@string/unlock_on_dismiss_title"
-        android:summary="@string/unlock_on_dismiss_summary"
-        android:defaultValue="true"  />
+        <CheckBoxPreference
+            android:key="show_status_bar_icon"
+            android:title="@string/show_status_bar_icon_title"
+            android:summary="@string/show_status_bar_icon_summary"
+            android:defaultValue="true"  />
+
+        <CheckBoxPreference
+            android:key="unlock_on_dismiss"
+            android:title="@string/unlock_on_dismiss_title"
+            android:summary="@string/unlock_on_dismiss_summary"
+            android:defaultValue="true"  />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="digital_clock"
+        android:title="@string/digital_gadget">
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="digital_clock_color"
+            android:title="@string/clock_color_title"
+            android:summary="@string/clock_color_summary"
+            android:defaultValue="@color/time_text_color" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

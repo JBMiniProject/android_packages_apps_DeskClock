@@ -24,4 +24,12 @@
     <string name="math_summary">Old meg a feladatot az ébresztés leállításához</string>
     <string name="math_dialog">Ébren vagy?</string>
 
+    <!-- Label for digital clock gadget, shown in list of all gadgets -->
+    <string name="digital_gadget">Digitális óra</string>
+
+    <!-- Label for the digital clock color settings -->
+    <string name="clock_color_title">Óra widget színe</string>
+    <!-- Label for the digital clock color settings summary -->
+    <string name="clock_color_summary">A Digitális óra widget színének beállítása.</string>
+
 </resources>

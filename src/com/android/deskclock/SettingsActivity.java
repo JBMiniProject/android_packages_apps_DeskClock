@@ -18,6 +18,10 @@ package com.android.deskclock;
 
 import java.util.Locale;
 
+import android.appwidget.AppWidgetManager;
+import android.content.ComponentName;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -28,6 +32,8 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 /**
  * Settings for the Alarm Clock.
@@ -56,6 +62,8 @@ public class SettingsActivity extends PreferenceActivity
             "flip_action";
     static final String KEY_UNLOCK_ON_DISMISS =
             "unlock_on_dismiss";
+    static final String KEY_DIGITAL_CLOCK_COLOR =
+            "digital_clock_color";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,6 +128,14 @@ public class SettingsActivity extends PreferenceActivity
             // Check if any alarms are active. If yes and
             // we allow showing the alarm icon, the icon will be shown.
             Alarms.updateStatusBarIcon(getApplicationContext(), (Boolean) newValue);
+        } else if (KEY_DIGITAL_CLOCK_COLOR.equals(pref.getKey())) {
+            AppWidgetManager widgetManager = AppWidgetManager.getInstance(this);
+            ComponentName widgetComponent = new ComponentName(this, DigitalAppWidgetProvider.class);
+            int[] widgetIds = widgetManager.getAppWidgetIds(widgetComponent);
+            Intent update = new Intent();
+            update.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, widgetIds);
+            update.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
+            this.sendBroadcast(update);
         }
         return true;
     }
@@ -177,5 +193,8 @@ public class SettingsActivity extends PreferenceActivity
 
         CheckBoxPreference unlockOnDismiss = (CheckBoxPreference) findPreference(KEY_UNLOCK_ON_DISMISS);
         unlockOnDismiss.setOnPreferenceChangeListener(this);
+
+        ColorPickerPreference clockColor = (ColorPickerPreference) findPreference(KEY_DIGITAL_CLOCK_COLOR);
+        clockColor.setOnPreferenceChangeListener(this);
     }
 }
